@@ -8,6 +8,7 @@ open command promt and enter the following commands:
 **tkinter:**
 >pip install tkinter
 **pillow:**
+
 >pip install pillow
 # Screenshots:
 
