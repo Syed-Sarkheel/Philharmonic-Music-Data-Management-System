@@ -1,6 +1,8 @@
 # Philaharmonic-Music-Data-Management-System
-A standalone Database Management System project using **Python** and **Sqlite3**. The aim of this project is to develop a simple, easy to use and centralized ***Music Management Database System***.
+A standalone Database Management System project using **Python** and **Sqlite3**. The aim of this project is to develop a simple, easy to use and centralized ***Music
 
+Management Database System***.
+A standalone Database Management System project using Python and Sqlite3. The aim of this project is to develop a simple, easy to use and centralized Music Management Database System. This application will store the information of artists, songs, albums,genre, etc. The application is built for users to search songs and albums based on various searching parameters. Upon searching for a song the user will be provided with a non-audio based output such as artist name, album name,release date and other details.Using these parameters and the songs from the database, users are also allowed to create and view playlist based on the individual attributes of the songs.
 
 To run the code we have to install additional python packages,
 open command promt and enter the following commands:
