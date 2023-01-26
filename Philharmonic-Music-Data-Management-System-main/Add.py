@@ -54,9 +54,14 @@ def add_songs():
 
         c.execute(data_insert_query, data_insert_tupple)
 
-        data_insert_query1 = ''' INSERT INTO album ( album_name, artist_name) VALUES (?, ?)'''
-        data_insert_tupple1= (album_box.get(), artist_box.get())
+        data_insert_query1 = ''' INSERT INTO album ( album_name, artist_name,song_name, release_date) VALUES (?, ?, ?, ?)'''
+        data_insert_tupple1= (album_box.get(), artist_box.get(), title_box.get(), release_year_box.get())
         c.execute(data_insert_query1, data_insert_tupple1)
+
+        data_insert_query2 = ''' INSERT INTO artist ( album_name, artist_name, song_name) VALUES (?, ?, ?)'''
+        data_insert_tupple2= (album_box.get(), artist_box.get(), title_box.get())
+        c.execute(data_insert_query2, data_insert_tupple2)   
+    
         # Commit changes
         conn.commit()
         # closing connection
