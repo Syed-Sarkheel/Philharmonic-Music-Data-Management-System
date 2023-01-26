@@ -31,6 +31,9 @@ def delete_song():
         c = conn.cursor()
 
         c.execute("DELETE FROM songs WHERE song_name = ? AND artist_name = ?", (name, artist))
+        c.execute("DELETE FROM artist WHERE song_name = ? AND artist_name = ?", (name, artist))
+        c.execute("DELETE FROM album WHERE song_name = ? AND artist_name = ?", (name, artist))
+        
         # Commit changes
         conn.commit()
         # closing connection
